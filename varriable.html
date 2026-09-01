@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show">hello</div>
+    <script>
+        var x = 5;
+        const y = 10;
+        let z = 15;
+            //  output no-1
+        console.log(x + "value of x");
+        console.log(y + "value of y");
+        console.log(z + "value of z");
+        console.log(x + y + "sum of x and y");
+        console.log(x + y + z + "sum of x, y, and z");
+        console.log(x + y - z + 20 + "result of the expression");
+            //    output no-2
+        document.write(x + "<br> value of x <br>");
+        document.write(y + "<br> value of y <br>");
+        document.write(z + "<br> value of z <br>");
+        document.write(x + y + "<br> sum of x and y <br>");
+        document.write(x + y + z + "<br> sum of x, y, and z <br>");
+        document.write(x + y + z + 20 + "<br> result of the expression <br>");
+        document.write(x * y + z + "<br> product of x and y plus z <br>");
+            //    output no-3
+        document.getElementById("show").innerHTML = sum;
+            //    output no-4
+        alert(x);
+        alert(x + y);
+        alert(x + y + z);
+        alert(x + y + z + 20);
+        alert(x * y + z );
+        alert(x * y * z );
+        alert(x * y / z );
+        alert(x * y % z );
+        alert(x * y - z );  
+        alert(x - y - z - 20);
+        let kept = document.getElementById("show").innerHTML;
+        alert(kept);
+    </script>
+</body>
+</html>
