@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div id="show"></div>
+    <script>
+        const person = {
+            name: "John",
+            age: 20,
+           city: "Dhaka"
+        };
+        // document.write( "name: " + person.name +
+        // "<br>age: " + person.age +
+        // "<br>city: " + person.city );
+        
+         let info = 
+         "name: " +
+          person.name +
+        "<br>age: " +
+         person.age +
+        "<br>city: " + 
+        person.city;
+        document.getElementById("show").innerHTML = info;
+    </script>
+</body>
+</html>
