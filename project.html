@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=    <!DOCTYPE html>
+    <html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>বাংলাদেশ কারিগরি শিক্ষা বোর্ড</title>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <style>
+            body {
+                font-family: "Noto Sans Bengali", Arial, sans-serif;
+                background: #f5f7fa;
+            }
+    
+            .top-bar {
+                background: #087f5b;
+                color: white;
+                font-size: 14px;
+            }
+    
+            .brand-header {
+                background: white;
+            }
+    
+            .brand-logo {
+                width: 72px;
+                height: 72px;
+                background: #087f5b;
+                color: white;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                font-size: 30px;
+            }
+    
+            .navbar {
+                background: #075e45 !important;
+            }
+    
+            .navbar .nav-link,
+            .navbar .navbar-brand {
+                color: white !important;
+            }
+    
+            .navbar .nav-link:hover {
+                background: #0b8f67;
+            }
+    
+            .hero {
+                min-height: 360px;
+                background:
+                    linear-gradient(90deg, rgba(0, 75, 55, .92), rgba(0, 75, 55, .35)),
+                    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80")
+                    center/cover;
+                color: white;
+            }
+    
+            .section-title {
+                color: #075e45;
+                font-weight: 700;
+                border-left: 5px solid #f4b400;
+                padding-left: 12px;
+            }
+    
+            .notice-card,
+            .service-card {
+                border: 0;
+                transition: .2s;
+            }
+    
+            .notice-card:hover,
+            .service-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0,0,0,.12) !important;
+            }
+    
+            .service-icon {
+                width: 55px;
+                height: 55px;
+                display: grid;
+                place-items: center;
+                border-radius: 12px;
+                background: #e4f5ef;
+                color: #087f5b;
+                font-size: 25px;
+            }
+    
+            footer {
+                background: #063f30;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="top-bar py-2">
+            <div class="container d-flex justify-content-between">
+                <span><i class="bi bi-envelope"></i> info@bteb.gov.bd</span>
+                <span><i class="bi bi-telephone"></i> হেল্পলাইন: ১৬১২৩</span>
+            </div>
+        </div>
+    
+        <header class="brand-header py-3">
+            <div class="container d-flex align-items-center gap-3">
+                <div class="brand-logo">
+                    <i class="bi bi-building"></i>
+                </div>
+                <div>
+                    <h3 class="mb-1 text-success">বাংলাদেশ কারিগরি শিক্ষা বোর্ড</h3>
+                    <p class="mb-0 text-muted">Bangladesh Technical Education Board</p>
+                </div>
+            </div>
+        </header>
+    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-lg-none" href="#">প্রধান পাতা</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link px-3" href="#">হোম</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#about">আমাদের সম্পর্কে</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#services">সেবাসমূহ</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#notices">নোটিশ</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#results">ফলাফল</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <main>
+            <section class="hero d-flex align-items-center">
+                <div class="container">
+                    <div class="col-lg-7">
+                        <h1 class="display-5 fw-bold">কারিগরি শিক্ষায় গড়ি<br>সমৃদ্ধ বাংলাদেশ</h1>
+                        <p class="lead my-4">
+                            দক্ষ মানবসম্পদ উন্নয়ন ও কারিগরি শিক্ষার প্রসারে আমরা প্রতিশ্রুতিবদ্ধ।
+                        </p>
+                        <a href="#services" class="btn btn-warning btn-lg px-4">
+                            সেবাসমূহ দেখুন <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="services" class="py-5">
+                <div class="container">
+                    <h3 class="section-title mb-4">জনগুরুত্বপূর্ণ সেবা</h3>
+    
+                    <div class="row g-4">
+                        <div class="col-md-3">
+                            <div class="card service-card shadow-sm h-100 p-3">
+                                <div class="service-icon mb-3"><i class="bi bi-file-earmark-text"></i></div>
+                                <h5>অনলাইন আবেদন</h5>
+                                <p class="text-muted mb-0">ভর্তি ও বিভিন্ন আবেদনের তথ্য দেখুন।</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="card service-card shadow-sm h-100 p-3">
+                                <div class="service-icon mb-3"><i class="bi bi-award"></i></div>
+                                <h5>ফলাফল</h5>
+                                <p class="text-muted mb-0">পরীক্ষার ফলাফল অনলাইনে যাচাই করুন।</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="card service-card shadow-sm h-100 p-3">
+                                <div class="service-icon mb-3"><i class="bi bi-download"></i></div>
+                                <h5>ডাউনলোড</h5>
+                                <p class="text-muted mb-0">প্রয়োজনীয় ফরম ও নির্দেশিকা ডাউনলোড করুন।</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="card service-card shadow-sm h-100 p-3">
+                                <div class="service-icon mb-3"><i class="bi bi-question-circle"></i></div>
+                                <h5>সহায়তা</h5>
+                                <p class="text-muted mb-0">যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="notices" class="py-5 bg-white">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-7">
+                            <h3 class="section-title mb-4">সর্বশেষ নোটিশ</h3>
+    
+                            <div class="card notice-card shadow-sm mb-3">
+                                <div class="card-body d-flex justify-content-between gap-3">
+                                    <div>
+                                        <h5 class="mb-1">পরীক্ষার সময়সূচি প্রকাশ</h5>
+                                        <small class="text-muted">০৫ সেপ্টেম্বর ২০২৬</small>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-success btn-sm align-self-center">বিস্তারিত</a>
+                                </div>
+                            </div>
+    
+                            <div class="card notice-card shadow-sm mb-3">
+                                <div class="card-body d-flex justify-content-between gap-3">
+                                    <div>
+                                        <h5 class="mb-1">ভর্তি সংক্রান্ত জরুরি বিজ্ঞপ্তি</h5>
+                                        <small class="text-muted">০২ সেপ্টেম্বর ২০২৬</small>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-success btn-sm align-self-center">বিস্তারিত</a>
+                                </div>
+                            </div>
+    
+                            <div class="card notice-card shadow-sm">
+                                <div class="card-body d-flex justify-content-between gap-3">
+                                    <div>
+                                        <h5 class="mb-1">অনলাইন ফরম পূরণের নির্দেশনা</h5>
+                                        <small class="text-muted">২৮ আগস্ট ২০২৬</small>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-success btn-sm align-self-center">বিস্তারিত</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="about" class="col-lg-5">
+                            <h3 class="section-title mb-4">আমাদের সম্পর্কে</h3>
+                            <div class="card border-0 shadow-sm p-4">
+                                <p class="text-muted">
+                                    বাংলাদেশ কারিগরি শিক্ষা বোর্ড দেশের কারিগরি ও বৃত্তিমূলক শিক্ষা ব্যবস্থার
+                                    মানোন্নয়ন, পরীক্ষা গ্রহণ এবং ফলাফল প্রকাশে গুরুত্বপূর্ণ ভূমিকা পালন করে।
+                                </p>
+                                <a href="#" class="btn btn-success">আরও জানুন</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer id="contact" class="pt-5 pb-3">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5>বাংলাদেশ কারিগরি শিক্ষা বোর্ড</h5>
+                        <p class="text-white-50">
+                            আগারগাঁও, শেরেবাংলা নগর, ঢাকা-১২০৭।
+                        </p>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <h5>গুরুত্বপূর্ণ লিংক</h5>
+                        <a href="#" class="d-block text-white-50 mb-2">শিক্ষা মন্ত্রণালয়</a>
+                        <a href="#" class="d-block text-white-50">কারিগরি শিক্ষা অধিদপ্তর</a>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <h5>যোগাযোগ</h5>
+                        <p class="text-white-50 mb-1">info@bteb.gov.bd</p>
+                        <p class="text-white-50">+৮৮০ ২ ৫৫০০৬৫০০</p>
+                    </div>
+                </div>
+    
+                <hr>
+                <p class="text-center text-white-50 mb-0">
+                    © ২০২৬ বাংলাদেশ কারিগরি শিক্ষা বোর্ড। সর্বস্বত্ব সংরক্ষিত।
+                </p>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
