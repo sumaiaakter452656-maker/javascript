@@ -7,9 +7,12 @@
 </head>
 <body>
     <script>
-        let a =3;
-        console.log(a);
-
+        var airFlock="";
+var airplane = new Array("Cessna","Piper","Maule","Mooney","Boeing");
+for (var counter in airplane) {
+          airFlock += airplane[counter] + "<br>";
+}
+document.write(airFlock)
     </script>
 </body>
 </html>
