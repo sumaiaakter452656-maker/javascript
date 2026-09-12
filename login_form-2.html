@@ -6,12 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-
-
+     <form action="" name="myform" onsubmit="return validation();">
+        <input type="text" name="username" placeholder="enter username"> <br><br>
+        <input type="password" name="password" placeholder="enter password"> <br><br>
+        <input type="submit" name="submit" value="submit"> 
     </form>
     <script>
-        function validation(){}
+       
+        function validation (){
+            let username =document.myform.username.value
+            let password =document.myform.password.value
+            let valid =false;
+            
+            if(username.length < 6){
+                alert ("username must be 6 chartecter");
+                return false;
+            } else {valid = true}
+            if(length >=8){
+                alert ("password within 8 character long");
+                return false;
+            } else {valid = true}
+
+            if(password==="") {
+                alert ("username or  password not validate");
+                valid= false;
+                return false;
+            }
+             else {
+              valid=true;
+            }
+            if(valid == true){
+                alert("all are validated")
+            }
+
+        }
+       
+       
     </script>
 </body>
 </html>
