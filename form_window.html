@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" name="myform" onsubmit="return mywindow();" >
+    <input type="text" name="name" placeholder=" Enter Fullname" > <br> <br>
+    <input type="text" name="address" placeholder="Enter address"> <br> <br> 
+    <input type="text" name="username" placeholder="enter username"> <br><br>
+    <input type="button" onclick="mywindow()" name="submit" value="submit">
+</form>
+<div id="show"></div>
+<script>
+    function mywindow(){
+        let name= document.myform.name.value;
+        let address= document.myform.address.valu
+        let username =document.myform.username.value;
+        let output ="<div class='blue '>";
+            output+= name +"<br>";
+            output+= address +"<br>";
+             output+= email +"<br>";
+            output+= "</div>";
+        //document.getElementById("show").innerHTML=output;
+        mywindow = window.open ("","","height:300,width: 450");
+        mywindown.document.write(output);
+    }
+</script>
+</body>
+</html>
+        

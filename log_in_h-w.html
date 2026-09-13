@@ -7,43 +7,41 @@
 </head>
 <body>
 <form action="" name="myform" onsubmit="return validation();" >
-    <input type="text" name="username" placeholder="enter username" > <br> <br>
+    <input type="text" name="email" placeholder="email" > <br> <br>
     <input type="password" name="password" placeholder="password"> <br> <br> 
     <input type="submit" name="submit" value="submit">
 </form>
 <script>
     function validation (){
-        let username = document.myform.username.value
-        let password = document.myform.password.value
+        let email = document.myform.email.value;
+        let password = document.myform.password.value;
         let valid = false;
+        // let x = false
+        if (email.search(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/)==-1){
+            alert("invaild email");
+            //x=false
+            return false;
+            }
+            // else{
+            //     alert("valid email address");
+             // //else{ x= true}
+            // }
+
+           
+        if (password.search(/^[a-zA-Z0-9]{4,8}$/)==-1){
+            alert("invaild password");
+            //x=false
+            return false;
+            }
+            else{
+                alert("valid password & valid email");
+                //x= trure
+            }
+            /* if (x){
+            alert("all are valid");
+            return true ;}*/
     }
 </script>
 </body>
 </html>
-        function validation (){
-            let username =document.myform.username.value
-            let password =document.myform.password.value
-            let valid =false;
-            
-            if(username.length < 6){
-                alert ("username must be 6 chartecter");
-                return false;
-            } else {valid = true}
-            if(length >=8){
-                alert ("password within 8 character long");
-                return false;
-            } else {valid = true}
-
-            if(password==="") {
-                alert ("username or  password not validate");
-                valid= false;
-                return false;
-            }
-             else {
-              valid=true;
-            }
-            if(valid == true){
-                alert("all are validated")
-            }
-
-        }
+        
