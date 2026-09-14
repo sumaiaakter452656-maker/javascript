@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+    </style>
 </head>
 <body>
-<form action="" name="myform" onsubmit="return mywindow();" >
+<form action="" name="myform" >
     <input type="text" name="name" placeholder=" Enter Fullname" > <br> <br>
     <input type="text" name="address" placeholder="Enter address"> <br> <br> 
     <input type="text" name="username" placeholder="enter username"> <br><br>
@@ -21,7 +24,7 @@
         let output ="<div class='blue '>";
             output+= name +"<br>";
             output+= address +"<br>";
-             output+= email +"<br>";
+             output+= username +"<br>";
             output+= "</div>";
         //document.getElementById("show").innerHTML=output;
         mywindow = window.open ("","","height:300,width: 450");

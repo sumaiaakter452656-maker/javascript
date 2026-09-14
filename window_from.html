@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text" name="name" placeholder="enter your name"><br>
+        <textarea name="address" placeholder="enter your address"></textarea><br>
+        gender <br>
+        <input type="radio" name="gender" value="male">male 
+        <input type="radio" name="gender" value="female">female <br>distric<br>
+
+        <select name="district" >
+            <option selected disabled value="">select one</option>
+            <option>Dhaka</option>
+            <option >cumilla</option>
+            <option >pabna</option>
+        </select>
+        
+         <br>hobbies<br> 
+        <input type="checkbox" class="hobbies" value="reading">reading
+        <input type="checkbox" class="hobbies" value="gardening">gardening
+        <input type="checkbox" class="hobbies" value="sleeping">sleeping<br>
+        
+        <input type="button" onclick="mywindow()" name="submit" value="open"><br>
+        <input type="button" onclick="mywindow.close()" name="submit" value="close"><br>
+        
+    </form>
+    <div id="show"></div>
+    <script>
+        function mywindow (){
+            let name =document.myform.name.value
+            let address =document.myform.address.value
+            let gender =document.myform.gender.value
+            let district =document.myform.district.value
+            let hobbies =document.getElementsByClassName("hobbies");
+            let hobbiesOutput ="";
+
+                for(let i=0;i<hobbies.length;i++){
+                 if(hobbies[i].checked){
+                     hobbiesOutput += hobbies[i].value +","; 
+                 }
+               }     
+
+            //console.log(hobbies);
+            let output = "<div class ='blue'>"
+
+            
+            output +="name:"+name+"<br>"
+            output +="address :"+address+"<br>"
+            output +="gender :"+gender+"<br>"
+            output +="district: "+district+"<br>"
+             output += "hobbies:" +hobbiesOutput +"<br>"
+            output +="</div>"
+
+            mywindow= window.open("","","height:300,width:400");
+            mywindow.document.write(output);
+        }
+    </script>
+</body>
+</html>
