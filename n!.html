@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter a number : <input type="number" id="num">
+    <p id="answer"></p>
+
+    <script>
+        function findFactorial(){
+            let fact=1
+            let n = document.getElementById("num").value;
+
+            for ( i = 1;i<=n;i++){
+                fact =fact *i;
+            }
+            document.getElementById("answer").innerHTML = n + "!=" +fact;
+        }
+    </script>
+    <button onclick="findFactorial()" >calculate</button>
+</body>
+</html>
+
+      
+    
+  
