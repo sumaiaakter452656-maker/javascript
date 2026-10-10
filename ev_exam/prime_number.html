@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mynum = prompt("enter a number","");
+        mynum = parseInt(mynum);
+        function checkPrime(x){
+            if(x==1){
+                alert("1 is not a prime number");
+                return;
+            } //end of if
+            else if(x==2){
+                alert(x+" is a prime number");
+                return;
+            }//end of else if
+             else {
+                for(let i=2;i<x;i++){
+                    if(x%i==0){
+                        alert(x+" is not a prime number");
+                        return;
+                    }
+                } //end of for loop
+                alert(x+" is a prime number");
+            } //end of else
+        }//function close
+
+        checkPrime(mynum);//calling function
+    </script>
+</body>
+</html>
