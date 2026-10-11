@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="traineeForm" >
+        <label for="name">name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label for="contact">contact:</label><br>
+        <input type="text" name="contact"><br><br>
+        
+        <label for="remarks">remarks:</label><br>
+        <textarea name="remarks"></textarea><br><br>
+
+        <label for="gender">gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="course" >course:</label><br>
+        <input type="checkbox" class="course" value="NT">NT
+        <input type="checkbox" class="course" value="IAD">IAD
+        <input type="checkbox" class="course" value="DDD">DDD
+        <br><br>
+        
+        <label for="">location:</label><br>
+        <select name="location" >
+            <option >Bonani</option>
+            <option >Dhanmondi</option>
+            <option >Mirpur</option>
+        </select><br><br>
+
+        <button type="button" onclick="getvalues()">submit</button>
+        
+        <script>
+        function getvalues(){
+            alert("hello")
+            let name = document.traineeForm.name.value;
+            let contect = document.traineeForm.contect.value;
+            let remarks = document.traineeForm.remarks.value;
+            let gender = document.traineeForm.gender.value;
+            let course = document.traineeForm.course.value;
+            let location = document.traineeForm.location.value;
+
+        }
+    </script>
+</body>
+</html>
