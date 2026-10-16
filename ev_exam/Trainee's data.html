@@ -6,66 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Question:Trainee_Enty</h1>
-    <form action="" name="traineeForm" >
-        <label for="name">name:</label><br>
-        <input type="text" name="name"><br><br>
-
-        <label for="contact">contact:</label><br>
-        <input type="text" name="contact"><br><br>
-        
-        <label for="remarks">remarks:</label><br>
-        <textarea name="remarks"></textarea><br><br>
-
-        <label for="gender">gender:</label><br>
+    <form action="" name="myform">
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+        <input type="text" name="contact" placeholder="Enter your number"> <br><br>
+        <textarea name="remarks" placeholder="Enter the remarks"></textarea><br>
+        <br>Gender: <br>
         <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br><br>
-
-        <label for="course" >course:</label><br>
-        <input type="checkbox" class="course" value="NT">NT
+        <input type="radio" name="gender" value="female"> Female<br>
+        <br>Course: <br>
+         <input type="checkbox" class="course" value="NT">NT
         <input type="checkbox" class="course" value="IAD">IAD
-        <input type="checkbox" class="course" value="DDD">DDD
-        <br><br>
-        
-        <label for="">location:</label><br>
-        <select name="location" >
-            <option >Bonani</option>
-            <option >Dhanmondi</option>
-            <option >Mirpur</option>
-        </select><br><br>
-        <input type="button" onclick="getvalues()" name="submit" value="submit">
-
-        
-        
-        <script>
-        function getvalues(){
-            //alert("hello")
-            let name = document.traineeForm.name.value;
-            let contect = document.traineeForm.contact.value;
-            let remarks = document.traineeForm.remarks.value;
-            let gender = document.traineeForm.gender.value;
-            //let course = document.traineeForm.course.value;
-            let location = document.traineeForm.location.value;
-            let output = "";
-            output +="name:"+name+"<br>";
-            output +="contact :"+contact+"<br>";
-            output +="remarks :"+remarks+"<br>";
-            output +="gender :"+gender+"<br>";
-            output += "location:" +location+"<br>";
-            let courseOutput="";
-            const course =document.getElementsByClassName(course);
-            for(let i=0 ; i<course.length;i++){
-                if(course[i].checked){
-                   courseOutput += course[i].value+",";
-                }
-            }
-          
-            // let mywindow = window.open("","","height:300px , width: 400px");
-            // mywindow.document.write(output);
+        <input type="checkbox" class="course" value="DDD">DDD <br>
+        <br>location: <br>
+        <select name="district" >
+            <option >select one</option>
+            <option>Dhaka</option>
+            <option >cumilla</option>
+            <option >pabna</option>
+        </select> <br> <br>
+        <input type="button" onclick="mywindow()" name="submit" value="open"><br> <br>
+        <input type="button" onclick="mywindow.close()" name="submit" value="close"><br>
+    </form>
+    <div id="show"></div>
+    <script>
+        function mywindow(){
+            let name =document.myform.name.value
+            let contact =document.myform.contact.value
+            let remarks=document.myform.remarks.value
+            let gender =document.myform.gender.value
+            let course =document.getElementsByClassName("course");
+            let courseOutput ="";
+            let district =document.myform.district.value
             
-            let mywindow = window.open("", "", "width=400,height=300");
+            for(let i=0;i<course.length;i++){
+                 if(course[i].checked){
+                     courseOutput += course[i].value +","; 
+                 }
+               }     
+
+
+            let output = "<div class ='blue'>"
+
+            
+            output +="name:"+name+"<br>"
+            output +="contact :"+contact+"<br>"
+            output +="remarks :"+remarks+"<br>"
+            output +="gender :"+gender+"<br>"
+            output +="district: "+district+"<br>"
+            output += "course:" +courseOutput +"<br>"
+            output +="</div>"
+
+             mywindow= window.open("","","height:300,width:400");
             mywindow.document.write(output);
         }
     </script>
 </body>
 </html>
+
