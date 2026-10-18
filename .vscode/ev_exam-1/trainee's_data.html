@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text" name="name" placeholder="Enter your name"><br>
+        <input type="text" name="contect" placeholder="Enter your contect"><br>
+        <textarea name="remarks" placeholder="Remarks"></textarea><br>
+        <br> Sex : <br>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female<br>
+        <br>Course : <br>
+        <input type="checkbox" class="course" value="NT">NT
+        <input type="checkbox" class="course" value="IAD">IAD
+        <input type="checkbox" class="course" value="DDD">DDD
+        <input type="checkbox" class="course" value="ESAD"> ESAD<br>
+        <br>Location: <br>
+        <select name="district">
+            <option >select one</option>
+            <option >Bannani</option>
+            <option >Dhanmondi</option>
+            <option >Mirpur</option>
+        </select> <br>
+        <input type="button" onclick="mywindow()" name="submit" value="open"> <br>
+      
+    </form>
+    <div id="show"></div>
+    <script> 
+    function mywindow(){
+            let name = document.myform.name.value
+            let contect = document.myform.contect.value
+            let remarks = document.myform.remarks.value
+            let Gender= document.myform.Gender.value
+            let course = document.getElementsByClassName("course");
+            let courseOutput = "";
+            let district= document.myform.district.value;
+
+            
+
+            for(let i=0; i<course.length; i++){
+               if(course[i].checked){
+              courseOutput += course[i].value+",";}
+          }
+
+            let output = "";
+            
+           output += "Name:"+name +"<br>"  
+           output += "contect :"+contect  +"<br>"  
+           output += "Remarks:"+ remarks +"<br>"  
+           output +="sex :"+Gender+"<br>"
+           output += "course:"+courseOutput +"<br>"  
+           output += "Location :"+district +"<br>"  
+        output += "</div>"   
+
+
+            mywindow = window.open("","","height=300px, width=200px") ;
+           mywindow.document.write(output);
+
+           
+        }
+    </script>
+</body>
+</html>
