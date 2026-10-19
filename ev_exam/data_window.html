@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+        
+        <input type="text" name="name" value=""><br>
+        <input type="text" name="number" value=""><br>
+        <input type="email" name="email" value=""><br>
+        <input type="password" name="password" value=""><br>
+        <textarea name="addres"></textarea><br>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female<br>
+        <input type="checkbox" class="classname" value="ssc">ssc
+        <input type="checkbox" class="classname" value="HSC">HSC
+        <input type="checkbox" class="classname" value="BSC">BSC
+        <input type="checkbox" class="classname" value="MSC">MSC<br>
+        <select name="city">
+            <option>selectone</option>
+            <option>Dhaka</option>
+            <option>noagonag</option>
+            <option>scumilla</option>
+        </select><br>
+        <button onclick="abc()" value="SUBMIT">Submit</button>
+    </form>
+    
+<script>
+    function abc(){
+let name = document.myform.name.value;
+let number = document.myform.number.value;
+let email = document.myform.email.value;
+let password = document.myform.password.value;
+let gender = document.myform.gender.value;
+let city = document.myform.city.value;
+
+
+let output ="";
+
+output+= "name:" + name + "<br>";
+output+= "number:" + number + "<br>";
+output+= "email:" + email + "<br>";
+output+= "password:" + password + "<br>";
+output+= "gender:" + gender + "<br>";
+output+= "city:" + city + "<br>";
+output+= "classname:" + "SSC" + "<br>";
+
+
+let mywindow = window.open(""," "," hight=300, with=300")
+mywindow .document.write(output);
+
+
+    }
+</script>
+
+</body>
+</html>
